@@ -2,13 +2,13 @@ body {
     font-family: Arial, sans-serif;
     font-size: 12pt;
     background-color: #b5d8ec;
-    color: #b1b1b1;
+    color: #222222;
     margin: 15pt;
 }
 
 h1 {
     font-size: 24pt; /* Larger font size for H1 */
-    color: #ff0000; /* Red color for H1 */
+    color: #000000; /* Red color for H1 */
 }
 
 h2 {
@@ -24,7 +24,7 @@ h3 {
 /* Paragraph tags */
 p {
     font-size: 14pt;
-    color: #333; /* Default text color */
+    color: #000000; /* Default text color */
 }
 
 /* Link styles */
