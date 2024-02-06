@@ -2,70 +2,76 @@ body {
     font-family: Arial, sans-serif;
     font-size: 12pt;
     background-color: #b5d8ec;
-    color: #222222;
+    color: #000000;
     margin: 15pt;
 }
 
 h1 {
-    font-size: 24pt; /* Larger font size for H1 */
-    color: #000000; /* Red color for H1 */
+    font-size: 24pt;
+    color: #000000;
 }
 
 h2 {
     font-size: 18pt;
-    color: #0066cc; /* Blue color for H2 */
+    color: #002c8a;
 }
 
 h3 {
     font-size: 14pt;
-    color: #009900; /* Green color for H3 */
+    color: #005c99;
 }
 
-/* Paragraph tags */
-p {
-    font-size: 14pt;
-    color: #000000; /* Default text color */
+.main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:rgba(0, 75, 161, 0.171)
 }
 
-/* Link styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.side {
+    position: fixed;
+    top: 60px;
+    left: 40px;
+    width: 200px;
+    padding: 20px;
+    background-color: #f2f2f236;
+}
+
 a {
-    text-decoration: none;
-    color: #3366cc; /* Link color */
+    color: #0054a3;
 }
 
 a:hover {
-    color: #ff6600; /* Hover color */
+    text-decoration: underline;
+    color: #8b0045;
 }
 
 a:active {
-    color: #cc0000; /* Active color */
+    text-decoration: none;
+    color: #ff0000;
 }
 
 a:visited {
-    color: #663399; /* Visited link color */
+    text-decoration: none;
+    color:#6b00c2;
 }
 
-/* CSS Table layout */
-.table-container {
-    display: table;
-    width: 100%;
-}
-
-.table-row {
-    display: table-row;
-}
-
-.table-cell {
-    display: table-cell;
-    padding: 10px;
-    border: 1px solid #ccc; /* Border for better visibility */
-}
-
-/* Example layout for the table */
-.link-column {
-    width: 30%; /* Adjust the width as needed */
-}
-
-.description-column {
-    width: 70%; /* Adjust the width as needed */
+ul {
+    color:rgb(65, 53, 0)
 }
