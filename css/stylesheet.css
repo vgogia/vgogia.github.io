@@ -6,6 +6,11 @@ body {
     margin: 15pt;
 }
 
+#mepic {
+    width: 25%;
+    height: auto;
+}
+
 h1 {
     font-size: 24pt;
     color: #000000;
@@ -46,9 +51,9 @@ th {
 
 .side {
     position: fixed;
-    top: 60px;
-    left: 40px;
-    width: 200px;
+    top: 7%;
+    left: 15%;
+    margin: 0 auto;
     padding: 20px;
     background-color: #f2f2f236;
 }
@@ -73,5 +78,5 @@ a:visited {
 }
 
 ul {
-    color:rgb(65, 53, 0)
+    color:rgb(65, 53, 0);
 }
