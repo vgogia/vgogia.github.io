@@ -77,6 +77,28 @@ a:visited {
     color:#6b00c2;
 }
 
-ul {
-    color:rgb(65, 53, 0);
+#tablehead1 {
+    display: table-cell;
+    vertical-align: top;
+    width: 10%;
+    padding-right: 10px;
+}
+
+#list1 {
+    display: table-cell;
+    vertical-align: top;
+    width: 50%;
+}
+
+#tablehead2 {
+    display: table-cell;
+    vertical-align: top;
+    width: 10%;
+    padding-right: 10px;
+}
+
+#list2 {
+    display: table-cell;
+    vertical-align: top;
+    width: 50%;
 }
