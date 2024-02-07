@@ -1,9 +1,9 @@
-var username = prompt("What is your name?")
-alert("Welcome" + username + "to my website!")
+var username = prompt("What is your name?"); // Ask user to enter name and store in variable 'username'
+alert("Welcome " + username + " to my website!"); // Display welcome message with user's name
 
-/*1. Ask your users to enter their names when your website is loaded.
-2. Store that name in a variable, which can be displayed on your website.
-3. Display a welcome message on your website with the name included.
-4. Change the style of at least two types of DOM elements (i.e. fonts, colour, etc).
-5. Use the innerHTML property to change the text of one of your headings.
-6. Include comments for all the different functionality in your file /*
+window.onload = function() {
+    var h1Element = document.querySelector("h1"); // Select the H1 element and store in variable
+    h1Element.style.fontFamily = "Times New Roman"; // Change DOM element font
+    h1Element.style.backgroundColor = "cyan"; // Change DOM element H1 backgound colour
+    h1Element.innerHTML = "I am Varun Gogia"; // Use innerHTML to change text of main heading H1
+};
