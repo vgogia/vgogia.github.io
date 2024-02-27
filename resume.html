@@ -14,12 +14,16 @@
 
 <body>
 
-    <div class="navigation">
+    <nav>
         <a href="index.html" onmouseover="navHover(this)" onmouseout="navNoHover(this)">Home</a>
         <a href="resume.html" onmouseover="navHover(this)" onmouseout="navNoHover(this)">Resume</a>
         <a href="cv.html" onmouseover="navHover(this)" onmouseout="navNoHover(this)">CV</a>
-        <a href="more.html" onmouseover="navHover(this)" onmouseout="navNoHover(this)">More</a>
-    </div>
+        <button onclick="dropFunction()" class="dropbtn">More</button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="more1.html" onmouseover="navHover(this)" onmouseout="navNoHover(this)"></a>More 1</a>
+            <a href="more2.html" onmouseover="navHover(this)" onmouseout="navNoHover(this)"></a>More 2</a>
+        </div>
+    </nav>
 
 <div class="main">
 
