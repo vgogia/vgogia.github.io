@@ -16,140 +16,36 @@
 
     <nav>
         <a href="index.html" onmouseover="navHover(this)" onmouseout="navNoHover(this)">Home</a>
-        <a href="resume.html" onmouseover="navHover(this)" onmouseout="navNoHover(this)">Resume</a>
-        <a href="cv.html" onmouseover="navHover(this)" onmouseout="navNoHover(this)">CV</a>
-        <button onclick="dropFunction()" class="dropbtn">More</button>
+        <button onclick="dropFunction()" class="dropbtn">Career Documents</button>
         <div id="myDropdown" class="dropdown-content">
-            <a href="more1.html" onmouseover="navHover(this)" onmouseout="navNoHover(this)"></a>More 1</a>
-            <a href="more2.html" onmouseover="navHover(this)" onmouseout="navNoHover(this)"></a>More 2</a>
+            <a href="resume.html" onmouseover="navHover(this)" onmouseout="navNoHover(this)">Resume</a>
+            <a href="cv.html" onmouseover="navHover(this)" onmouseout="navNoHover(this)">CV</a>
         </div>
+        <a href="contact.html" onmouseover="navHover(this)" onmouseout="navNoHover(this)">Contact</a>
     </nav>
+    
+    <div class="container">
+    <div class="socials">
+        <h2>My Socials:</h2>
+            <a href="https://www.linkedin.com/in/varungogia0/" target="_blank">LinkedIn</a> <br /> <br />
+            <a href="https://www.facebook.com/Vinnygogia0/" target="_blank">Facebook</a>
+            <!-- <a href="javascript:void(0);" class="icon" onclick="toggleSocials()">
+                <img id="socialsIcon" src="images/socialicon.png" alt="Socials"></a> -->
+    </div>
 
-<div class="main">
+    <div class="main">
 
-    <button onclick="enterName()">Enter your name</button>
+        <button onclick="enterName()">Enter your name</button>
 
-    <h1>Varun Gogia</h1>
+        <h1>Varun Gogia</h1>
 
-        <div class="socials">
-            <h2>My Socials:</h2>
-                <a href="https://www.linkedin.com/in/varungogia0/" target="_blank">LinkedIn</a> <br /> <br />
-                <a href="https://www.facebook.com/Vinnygogia0/" target="_blank">Facebook</a>
-        </div>
+        <figure onclick="imageClicked()"><img id="mepic" src="images/profilepic.jpg" /> </figure>
+        <p>Email: vgogia@torontomu.ca</p>
 
-    <figure onclick="imageClicked()"><img id="mepic" src="images/profilepic.jpg" /> </figure>
-    <p>Email: vgogia@torontomu.ca</p>
+        <h2>About Me</h2>
+            <p>I am a student currently attending Ted Rogers School of Business at Toronto Metropolitan University. I am studying towards a BComm degree in the Business Technology Management program.</p>
+    </div>
+    </div>
 
-    <h2>About Me</h2>
-        <p>I am a student currently attending Ted Rogers School of Business at Toronto Metropolitan University. I am studying towards a BComm degree in the Business Technology Management program.</p>
-
-    <h3>Education</h3>
-        <table>
-            <tr>
-                <th>Degree</th>
-                <th>Institution</th>
-                <th>Location</th>
-                <th>Duration</th>
-            </tr>
-            <tr>
-                <td>High School Diploma</td>
-                <td>Eastview Secondary School</td>
-                <td>Barrie, Ontario</td>
-                <td>September 2015 – June 2019</td>
-            </tr>
-            <tr>
-                <td>BBA</td>
-                <td>Wilfrid Laurier University</td>
-                <td>Waterloo, Ontario</td>
-                <td>September 2019 – May 2021</td>
-            </tr>
-            <tr>
-                <td>Business Technology Management</td>
-                <td>Toronto Metropolitan University</td>
-                <td>Toronto, Ontario</td>
-                <td>September 2021 – Present</td>
-            </tr>
-        </table>
-
-    <h3>Work Experience</h3>
-        <table>
-            <tr>
-                <th>Position</th>
-                <th>Employer</th>
-                <th>Location</th>
-                <th>Duration</th>
-            </tr>
-            <tr>
-                <td>Restaurant Employee/Supervisor</td>
-                <td>Twisted Indian Wraps</td>
-                <td>Barrie, Ontario</td>
-                <td>June 2015 – Present</td>
-            </tr>
-            <tr>
-                <td>Restaurant Employee</td>
-                <td>Mucho Burrito</td>
-                <td>Barrie, Ontario</td>
-                <td>June 2016 – September 2016</td>
-            </tr>
-            <tr>
-                <td>Host</td>
-                <td>Simmering Kettle</td>
-                <td>Barrie, Ontario</td>
-                <td>March 2018 – Jan 2019</td>
-            </tr>
-        </table>
-
-    <h3>Volunteer Experience</h3>
-        <table>
-            <tr>
-                <th>Role</th>
-                <th>Organization</th>
-                <th>Location</th>
-                <th>Duration</th>
-            </tr>
-            <tr>
-                <td>Recreation Volunteer for the Elderly</td>
-                <td>Victoria Village</td>
-                <td>Barrie, Ontario</td>
-                <td>October 2016 – March 2017</td>
-            </tr>
-            <tr>
-                <td>Advertising/Marketing Volunteer</td>
-                <td>San Francesco Sandwiches</td>
-                <td>Barrie, Ontario</td>
-                <td>June 2015 – July 2015</td>
-            </tr>
-            <tr>
-                <td>Food Vendor Volunteer</td>
-                <td>Twisted Indian Modern Wraps</td>
-                <td>Barrie, Ontario</td>
-                <td>July 2016</td>
-            </tr>
-        </table>
-
-        <div class="table-list">   
-            <h3 id="tablehead1">Skills and Abilities</h3>
-            <ul id="list1">
-                <li>Computer Skills</li>
-                <li>Problem Solving</li>
-                <li>Explaining</li>
-                <li>Following Instructions</li>
-                <li>Organization</li>
-                <li>Using Number Skills</li>
-                <li>Listening</li>
-                <li>Responsible</li>
-                </ul>
-        
-            <h3 id="tablehead2">Hobbies and Interests</h3>
-            <ul id="list2">
-                <li>Reading</li>
-                <li>Math</li>
-                <li>Assembling Things</li>
-                <li>Baseball</li>
-                <li>Producing Music</li>
-            </ul>
-        </div> 
-
-</div>
 </body>
 </html>

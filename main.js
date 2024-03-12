@@ -10,7 +10,7 @@ function imageClicked(){
 }
 
 function navHover(element) {
-    element.style.color = "#42f5b6";
+    element.style.color = "#00a6ed";
 }
 
 function navNoHover(element) {

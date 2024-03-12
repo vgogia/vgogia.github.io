@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varun Gogia Contact</title>
+
+    <link href="css/stylesheet.css"
+    type="text/css"
+    rel="stylesheet">
+
+    <script src="main.js"></script>
+    <script src="contactform.js"></script>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html" onmouseover="navHover(this)" onmouseout="navNoHover(this)">Home</a>
+        <button onclick="dropFunction()" class="dropbtn">Career Documents</button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="resume.html" onmouseover="navHover(this)" onmouseout="navNoHover(this)">Resume</a>
+            <a href="cv.html" onmouseover="navHover(this)" onmouseout="navNoHover(this)">CV</a>
+        </div>
+        <a href="contact.html" onmouseover="navHover(this)" onmouseout="navNoHover(this)">Contact</a>
+    </nav>
+
+<div class="main2">
+
+    <h1>Contact</h1>
+
+    <fieldset>
+    <form id="contactform">
+        <label for="name">Name: <!-- input 1 -->
+            <input type="text" id="name" name="name"></label>
+
+        <label for="email">Email: <!-- input 2 -->
+            <input type="email" id="email" name="email"></label>
+        <br />
+
+        <label for="phone">Phone Number:</label> <!-- input 3 -->
+            <input type="tel" id="phone" name="phone"
+                placeholder="123-456-7890"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+
+        <label for="date">Schedule a day to speak:</label> <!-- input 4 -->
+            <input type="date" id="date" name="date">
+        <br />
+
+        <label>Purpose of reaching out?<br /></label> <!-- input 5 -->
+            <label><input type="radio" name="radOption" value="business">Business</label>
+            <label><input type="radio" name="radOption" value="personal">Personal</label>
+        <br />
+
+        <label>What social media platforms you you use?<br /></label> <!-- input 6 -->
+            <label><input type="checkbox" name="checkOption" value="LinkedIn">LinkedIn</label>
+            <label><input type="checkbox" name="checkOption" value="Facebook">Facebook</label>
+            <label><input type="checkbox" name="checkOption" value="X (Twitter)">X (Twitter)</label>
+            <label><input type="checkbox" name="checkOption" value="Instagram">Instagram</label>
+        <br />
+
+        <label for="dropOp">How did you hear about me?</label> <!-- input 7 -->
+            <select id="dropOp" name="dropOp">
+                <option value="dropOption">Select</option>
+                <option value="dropOption">Met In-Person</option>
+                <option value="dropOption">An Employer</option>
+                <option value="dropOption">A Co-worker</option>
+                <option value="dropOption">Resume</option>
+                <option value="dropOption">LinkedIn</option>
+                <option value="dropOption">Other Social Media</option>
+            </select>
+        <br />
+
+        <label id="message">Message:</label> <br /><!-- input 8 -->
+            <textarea name="message" cols="70" rows="5"></textarea>
+        <br />
+        <input type="submit" value="Send">
+        <input type="reset" value="Clear">
+    </form>
+    </fieldset>
+
+</div>
+</body>
+</html>

@@ -1,58 +1,99 @@
 body {
     font-family: Arial, sans-serif;
     font-size: 12pt;
-    background-color: #b5d8ec;
-    color: #000000;
+    background-color: #053c5e;
     margin: 15pt;
+    display: absolute;
 }
 
 nav {
-    background-color: #0083da88;
+    background-color: #dce0d9;
     text-align: center;
     position: relative;
-    max-width: 800px;
+    max-width: 980px;
     margin: 0 auto;
     margin-bottom: 10px;
     padding: 20px;
     letter-spacing: 0.01cm;
     font-size: 18px;
-    word-spacing: 2cm;
+    word-spacing: 1cm;
+    border-radius: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.socials {
+    position: relative;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #dce0d9;
+    min-width: fit-content;
+}
+
+.main {
+    min-width: relative;
+    max-width: 800px;
+    margin-right: 0;
+    margin-left: 5px;
+    padding: 20px;
+    background-color: #bfdbf7;
+    border-radius: 15px;
+}
+
+.main2 {
+    min-width: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #bfdbf7;
+    border-radius: 15px;
+    float: center;
 }
 
 nav a {
     text-decoration: none;
     font-weight: bold;
-    color: #ffffff;
+    color: #053c5e;
 }
 
 .dropbtn {
-    font-size: 18px;
+    font-family: Arial, sans-serif;
+    font-size: 18px; 
+    background-color: #dce0d9;
+    color: #053c5e; 
+    text-align: center;
+    text-decoration: none; 
+    font-weight: bold;
 }
 
 .dropdown-content {
     display: none;
     position: relative;
-    background-color: #949494;
     max-width: 1px;
     font-size: 15px;
-    margin-left: 568px;
+    margin: 0 auto;
     padding-top: 10px;
-
+    max-width: fit-content;
 }
-    
+
+.dropbtn:hover {
+    cursor: pointer;
+    color: #00a6ed;
+}
+
 .dropdown-content a {
     display:block;
     text-decoration: none;
-}
-    
-.dropdown-content a:hover {
-    background-color: "#42f5b6";
+    font-weight: bold;
+    color: #053c5e;
 }
     
 .show {
     display: block;
 }
-    
 
 .enlargePic {
     transform: scale(1.5);
@@ -78,13 +119,26 @@ h3 {
     color: #005c99;
 }
 
-.main {
-    position: relative;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color:rgba(0, 75, 161, 0.171)
+.socials a {
+    color: #d62828;
+    text-decoration: none;
 }
+
+.socials a:hover {
+    text-decoration: underline;
+    color: #b6005b;
+}
+
+.socials a:active {
+    text-decoration: none;
+    color: #ff0000;
+}
+
+/**.socials a:visited {
+    text-decoration: none;
+    color:#ae00ff;
+}
+**/
 
 table {
     width: 100%;
@@ -100,34 +154,6 @@ th, td {
 
 th {
     background-color: #f2f2f2;
-}
-
-.socials {
-    position: absolute;
-    top: 2%;
-    right: 20px;
-    margin: auto;
-    padding: 20px;
-    background-color: #f2f2f236;
-}
-
-.socials a {
-    color: #00a89a;
-}
-
-.socials a:hover {
-    text-decoration: underline;
-    color: #b6005b;
-}
-
-.socials a:active {
-    text-decoration: none;
-    color: #ff0000;
-}
-
-.socials a:visited {
-    text-decoration: none;
-    color:#ae00ff;
 }
 
 #tablehead1 {
@@ -154,4 +180,64 @@ th {
     display: table-cell;
     vertical-align: top;
     width: 50%;
+}
+
+/** Contact Form CSS **/
+fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #bfdbf7;
+    border-radius: 15px;
+    color: #053c5e;
+}
+
+label {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+#contactform input[type="text"],
+#contactform input[type="email"],
+#contactform input[type="tel"],
+#contactform input[type="date"],
+#contactform input[type="radio"],
+#contactform input[type="checkbox"],
+#contactform select,
+#contactform textarea {
+    width: auto;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-right: 20px;
+}
+
+#contactform textarea {
+    width: 100%;
+    padding: 10px;
+    height: auto;
+    resize: vertical;
+    border-radius: 5px;
+}
+
+#contactform input[type="submit"],
+#contactform input[type="reset"] {
+    background-color: #053c5e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14pt;
+}
+
+#contactform input[type="submit"]:hover,
+#contactform input[type="reset"]:hover {
+    background-color: #032638;
 }
