@@ -30,7 +30,7 @@ window.onload = function() {
         localStorage.setItem('checkOption', JSON.stringify(checkValues));
 
         // dropdown
-        localStorage.setItem('location', document.getElementById('location').value);
+        localStorage.setItem('dropOp', document.getElementById('dropOp').value);
 
         // textarea
         localStorage.setItem('message', contactForm.elements['message'].value);
