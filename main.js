@@ -1,16 +1,16 @@
-function enterName(){
+function enterName() {
     var username = prompt("What is your name?");
     var h1Element = document.querySelector("h1");
     h1Element.innerHTML = "Hello, " + username + "! I am Varun Gogia.";
 }
 
-function imageClicked(){
+function imageClicked() {
     var imgElement = document.getElementById("mepic");
     imgElement.classList.toggle("enlargePic");
 }
 
 function navHover(element) {
-    element.style.color = "#00a6ed";
+    element.style.color = "#ffb55c";
 }
 
 function navNoHover(element) {
@@ -31,19 +31,19 @@ window.onclick = function(event) {
     }
     }
     }
-    }
+}
 
 // Accessibility
 function fontSize(size) {
     var body = document.body;
     if(size === 'small') {
-        body.style.fontSize = '10px'; // smaller size
+        body.style.fontSize = '10px'; // small size
     } else if(size === 'normal') {
         body.style.fontSize = '16px'; // regular size
     } else if(size === 'large') {
         body.style.fontSize = '22px'; // large size
     }
-    }
+}
 
 var defaultBG = false; // current color
 function colourToggle() {
@@ -51,7 +51,7 @@ function colourToggle() {
     var main = document.querySelector('.main');
     var social = document.querySelector('.socials');
     var main2 = document.querySelector('.main2');
-    defaultBG = !defaultBG; // Toggle the flag
+    defaultBG = !defaultBG;
     
     if (defaultBG) {
         // colours when toggled
