@@ -1,15 +1,16 @@
 body {
     font-family: Arial, sans-serif;
     font-size: 12pt;
-    background-color: #72440954;
+    background-color: #105179;
     margin: 15pt;
     display: absolute;
+    color: floralwhite;
 }
 
 /** Nav code **/
     nav {
         display: block;
-        background-color: #aa7d47;
+        background-color: #87acaffb;
         text-align: center;
         position: relative;
         max-width: 100%;
@@ -45,24 +46,24 @@ body {
 
     .dropdown-content {
         display: none;
-        background-color: #aa7d47;
-        border-radius: 20px;
+        background-color: #87acaffb;
+        border-radius: 15px;
         position: absolute;
         max-width: 100%;
         font-size: 18px;
         margin: 10px auto;
         margin-right: 18px;
-        top: 54%;
+        top: 56%;
         left: 0%;
         right: -18px;
-        padding: 12px;
+        padding: 8px;
         letter-spacing: 0.01cm;
         word-spacing: 2cm;
     }
 
     .dropbtn:hover {
         cursor: pointer;
-        color: #ffb55c;
+        color: #ffffff;
     }
 
     .dropdown-content a {
@@ -86,9 +87,9 @@ body {
     position: relative;
     border-radius: 15px;
     padding: 20px;
-    background-color: #af814857;
+    background-color: #729a5b79;
     min-width: fit-content;
-    max-height:max-content;
+    max-height: fit-content;
 }
 
 .main {
@@ -97,7 +98,7 @@ body {
     margin-right: 0;
     margin-left: 5px;
     padding: 20px;
-    background-color: #af814857;
+    background-color: #729a5b79;
     border-radius: 15px;
 }
 
@@ -106,7 +107,7 @@ body {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #af814857;
+    background-color: #729a5b79;
     border-radius: 15px;
     float: center;
 }
@@ -127,7 +128,7 @@ h1 {
 
 h2 {
     font-size: 18pt;
-    color: #002c8a;
+    color: #ffffff;
 }
 
 h3 {
@@ -136,14 +137,14 @@ h3 {
 }
 
 .socials a {
-    color: #002c8a;
+    color: #ffffff;
     text-decoration: none;
 }
 
 .socials a:hover {
     text-decoration: underline;
-    color: #b6005b;
-    font-weight: bold;
+    color: #000000;
+    font-weight: bolder;
 }
 
 .socials a:active {

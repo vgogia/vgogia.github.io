@@ -10,7 +10,7 @@ function imageClicked() {
 }
 
 function navHover(element) {
-    element.style.color = "#ffb55c";
+    element.style.color = "#ffffff";
 }
 
 function navNoHover(element) {
@@ -46,26 +46,24 @@ function fontSize(size) {
 }
 
 var defaultBG = false; // current color
-function colourToggle() {
+function colourToggle() { 
     var body = document.body;
     var main = document.querySelector('.main');
     var social = document.querySelector('.socials');
     var main2 = document.querySelector('.main2');
     defaultBG = !defaultBG;
     
-    if (defaultBG) {
-        // colours when toggled
-        body.style.backgroundColor = "#93B7DC";
-        body.style.color = "#000000";
-        main.style.backgroundColor = "#CECECE";
-        social.style.backgroundColor = "#ffffff";
-        main2.style.backgroundColor = "ffffff";
-    } else {
-        // revert
-        body.style.backgroundColor = "#053c5e";
-        body.style.color = "#000000";
-        main.style.backgroundColor = "#bfdbf7";
-        social.style.backgroundColor = "#dce0d9";
-        main2.style.backgroundColor = "#bfdbf7";
+    if (defaultBG) { // colours when toggled
+        body.style.backgroundColor = "#226D9E";
+        main.style.backgroundColor = "#38A3EA";
+        main.style.color = "#000000";
+        social.style.backgroundColor = "#38A3EA";
+        main2.style.backgroundColor = "#38A3EA";
+    } else { // revert
+        body.style.backgroundColor = "#105179";
+        main.style.backgroundColor = "#729a5b79";
+        main.style.color = "#ffffff";
+        social.style.backgroundColor = "#729a5b79";
+        main2.style.backgroundColor = "#729a5b79";
     }
 }
