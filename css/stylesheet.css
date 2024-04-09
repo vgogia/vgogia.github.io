@@ -1,19 +1,44 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
     font-size: 12pt;
-    background-color: #105179;
+    background-color: #155c88ef;
     margin: 15pt;
     display: absolute;
-    color: floralwhite;
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 24pt;
+    color: #000000;
+
+}
+
+h2 {
+    font-size: 18pt;
+    color: #da7746;
+}
+
+h3 {
+    font-size: 14pt;
+    color: #da7645;
+}
+
+.enlargePic {
+    transform: scale(1.5);
+}
+
+#mepic {
+    width: 25%;
+    height: auto;
 }
 
 /** Nav code **/
     nav {
         display: block;
-        background-color: #87acaffb;
+        background-color: #b97350;
         text-align: center;
         position: relative;
-        max-width: 100%;
+        max-width: 950px;
         margin: 0 auto;
         margin-bottom: 40px;
         padding: 30px;
@@ -46,7 +71,7 @@ body {
 
     .dropdown-content {
         display: none;
-        background-color: #87acaffb;
+        background-color: #b97350;
         border-radius: 15px;
         position: absolute;
         max-width: 100%;
@@ -83,22 +108,13 @@ body {
     justify-content: center;
 }
 
-.socials {
-    position: relative;
-    border-radius: 15px;
-    padding: 20px;
-    background-color: #729a5b79;
-    min-width: fit-content;
-    max-height: fit-content;
-}
-
 .main {
     min-width: relative;
     max-width: 800px;
     margin-right: 0;
     margin-left: 5px;
     padding: 20px;
-    background-color: #729a5b79;
+    background-color: #34854fb2;
     border-radius: 15px;
 }
 
@@ -107,33 +123,40 @@ body {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #729a5b79;
+    background-color: #34854fb2;
     border-radius: 15px;
     float: center;
+    margin-bottom: 100px;
 }
 
-.enlargePic {
-    transform: scale(1.5);
-}
-
-#mepic {
-    width: 25%;
-    height: auto;
-}
-
-h1 {
-    font-size: 24pt;
-    color: #000000;
-}
-
-h2 {
-    font-size: 18pt;
+.main2 a {
     color: #ffffff;
+    text-decoration: none;
 }
 
-h3 {
+.main2 a:hover{
+    text-decoration: underline;
+    color: #000000;
+    font-weight: bolder;
+}
+
+.main2 a:active{
+    text-decoration: none;
+    color: #ff0000;
+}
+
+strong {
+    color: #fafafa;
     font-size: 14pt;
-    color: #005c99;
+}
+
+.socials {
+    position: relative;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #34854fb2;
+    min-width: fit-content;
+    max-height: fit-content;
 }
 
 .socials a {
@@ -158,47 +181,64 @@ h3 {
 }
 **/
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-}
+/** Resume Info **/
+    table {
+        font-size: 16px;
+        width: fit-content;
+        border-collapse: collapse;
+        margin: 20px 0;
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    }
 
-th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
-}
+    th {
+        background-color: #d8ebff;
+        color: #333;
+        font-weight: bold;
+        text-align: left;
+        padding: 12px 15px;
+        border-bottom: 2px solid #dee2e6;
+    }
 
-th {
-    background-color: #f2f2f2;
-}
+    td {
+        padding: 10px 15px;
+        border-bottom: 1px solid #dee2e6;
+    }
 
-#tablehead1 {
-    display: table-cell;
-    vertical-align: top;
-    width: 10%;
-    padding-right: 10px;
-}
+    table, th, td {
+        border-radius: 10px;
+    }
 
-#list1 {
-    display: table-cell;
-    vertical-align: top;
-    width: 50%;
-}
+    tr:hover {
+        background-color: #a0a0a0;
+        color: #000000;
+    }
 
-#tablehead2 {
-    display: table-cell;
-    vertical-align: top;
-    width: 10%;
-    padding-right: 10px;
-}
+    #tablehead1 {
+        display: table-cell;
+        vertical-align: top;
+        width: 10%;
+        padding-right: 10px;
+    }
 
-#list2 {
-    display: table-cell;
-    vertical-align: top;
-    width: 50%;
-}
+    #list1 {
+        display: table-cell;
+        vertical-align: top;
+        width: 50%;
+    }
+
+    #tablehead2 {
+        display: table-cell;
+        vertical-align: top;
+        width: 10%;
+        padding-right: 10px;
+    }
+
+    #list2 {
+        display: table-cell;
+        vertical-align: top;
+        width: 50%;
+    }
+/** End of Resume Info **/
 
 /** Contact Form CSS **/
 fieldset {
@@ -208,9 +248,9 @@ fieldset {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #bfdbf7;
+    background-color: #73c7ab4d;
     border-radius: 15px;
-    color: #053c5e;
+    color: #000000;
 }
 
 label {
@@ -230,7 +270,7 @@ label {
     padding: 10px;
     margin-top: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
+    border: 1px solid #000000;
     border-radius: 5px;
     box-sizing: border-box;
     margin-right: 20px;

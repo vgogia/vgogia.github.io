@@ -1,7 +1,7 @@
 function enterName() {
     var username = prompt("What is your name?");
     var h1Element = document.querySelector("h1");
-    h1Element.innerHTML = "Hello, " + username + "! I am Varun Gogia.";
+    h1Element.innerHTML = "Hello " + username + ", I'm Varun Gogia.";
 }
 
 function imageClicked() {
@@ -54,16 +54,14 @@ function colourToggle() {
     defaultBG = !defaultBG;
     
     if (defaultBG) { // colours when toggled
-        body.style.backgroundColor = "#226D9E";
-        main.style.backgroundColor = "#38A3EA";
-        main.style.color = "#000000";
-        social.style.backgroundColor = "#38A3EA";
-        main2.style.backgroundColor = "#38A3EA";
+        body.style.backgroundColor = "#0072A9";
+        main.style.backgroundColor = "#006352";
+        social.style.backgroundColor = "#006352";
+        main2.style.backgroundColor = "#006352";
     } else { // revert
-        body.style.backgroundColor = "#105179";
-        main.style.backgroundColor = "#729a5b79";
-        main.style.color = "#ffffff";
-        social.style.backgroundColor = "#729a5b79";
-        main2.style.backgroundColor = "#729a5b79";
+        body.style.backgroundColor = "#155c88ef";
+        main.style.backgroundColor = "#34854fb2";
+        social.style.backgroundColor = "#34854fb2";
+        main2.style.backgroundColor = "#34854fb2";
     }
 }

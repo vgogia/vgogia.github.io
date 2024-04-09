@@ -9,8 +9,7 @@ window.onload = function() {
         localStorage.setItem('email', document.getElementById('email').value);
         localStorage.setItem('phone', document.getElementById('phone').value);
         localStorage.setItem('date', document.getElementById('date').value);
-        
-        // radio buttons
+            // radio buttons
         var radOptions = document.getElementsByName('radOption');
         for(var i = 0; i < radOptions.length; i++) {
             if(radOptions[i].checked) {
@@ -18,8 +17,7 @@ window.onload = function() {
                 break;
             }
         }
-
-        // checkboxes
+            // checkboxes
         var checkValues = [];
         var checkOptions = document.getElementsByName('checkOption');
         for(var i = 0; i < checkOptions.length; i++) {
@@ -28,11 +26,9 @@ window.onload = function() {
             }
         }
         localStorage.setItem('checkOption', JSON.stringify(checkValues));
-
-        // dropdown
+            // dropdown
         localStorage.setItem('dropOp', document.getElementById('dropOp').value);
-
-        // textarea
+            // textarea
         localStorage.setItem('message', contactForm.elements['message'].value);
 
         alert('Form submitted');
